@@ -197,6 +197,144 @@ block content
             button.preview
               | Превью 
 
+
+  section.table
+    .container 
+      .section-wrapper.section-wrapper-table
+        .section-left
+          .section-title
+            h2
+              | Турнирная таблица
+          .orange-line.match
+          a(href="#").section-link
+            | Полная таблица
+        .section-right.table-right
+          .divisions-wrapper
+            ul 
+              a(href="#")
+                li 
+                  | Дивизион
+                span
+                  | A
+              a(href="#")
+                li 
+                  | Дивизион
+                span
+                  | B
+              a(href="#")
+                li 
+                  | Дивизион
+                span
+                  | C
+              a(href="#")
+                li 
+                  | Дивизион
+                span
+                  | D            
+              
+
+          .table-wrapper
+            .table-line.main-line 
+              ul 
+                li №
+                li.table-team Команда
+                li И
+                li В                       
+                li ВО                       
+                li П                       
+                li ПО                       
+                li Ш                       
+                li О  
+            .table-line
+              ul 
+                li 1
+                li.table-team Югра
+                li 14
+                li 8                       
+                li 5                       
+                li 1                       
+                li 0                       
+                li 45/29                       
+                li 26
+            .table-line
+              ul 
+                li 2
+                li.table-team Рубин
+                li 15
+                li 7                       
+                li 5                       
+                li 2                       
+                li 1                       
+                li 39/26                       
+                li 25 
+            .table-line
+              ul 
+                li 3
+                li.table-team Металлург Новокузнецк
+                li 15
+                li 7                       
+                li 5                       
+                li 2                       
+                li 1                       
+                li 39/26                       
+                li 25  
+            .table-line
+              ul 
+                li 4
+                li.table-team Торпедо Усть-Каменогорск
+                li 15
+                li 7                       
+                li 5                       
+                li 2                       
+                li 1                       
+                li 39/26                       
+                li 25 
+            .table-line
+              ul 
+                li 5
+                li.table-team Сарыарка
+                li 15
+                li 7                       
+                li 5                       
+                li 2                       
+                li 1                       
+                li 39/26                       
+                li 25                                                                            
+            .table-line
+              ul 
+                li 6
+                li.table-team Сокол
+                li 15
+                li 7                       
+                li 5                       
+                li 2                       
+                li 1                       
+                li 39/26                       
+                li 25  
+            .table-line
+              ul 
+                li 7
+                li.table-team Номад
+                li 15
+                li 7                       
+                li 5                       
+                li 2                       
+                li 1                       
+                li 39/26                       
+                li 25 
+            .table-line
+              ul 
+                li 8
+                li.table-team Ермак
+                li 15
+                li 7                       
+                li 5                       
+                li 2                       
+                li 1                       
+                li 39/26                       
+                li 9                                                              
+
+
   section.leaders 
     .container 
       .section-title
@@ -439,11 +577,20 @@ block content
       .orange-line.match 
 
       .media-slider
+        .owl-carousel.owl-theme
+          .slider-item.opacity-left
+             img(src="../src/images/slider-img-2.jpg" alt="img")  
+          .slider-item.center
+             img(src="../src/images/slider-img-1.jpg" alt="img")    
+             img(src="../src/images/play.svg" alt="play").play    
+          .slider-item.opacity-right
+             img(src="../src/images/slider-img-2.jpg" alt="img")   
 
       .media-socials__wrapper
         .media-socials__card
-          a(href="#").media-socials__logo
-            img(src="../src/images/vk.svg" alt="vk") 
+          a(href="#")
+            .media-socials__logo
+              img(src="../src/images/vk.svg" alt="vk") 
           .media-socials__descr
             p
               | Если вчера вы не следили за игрой "Хумо" против "СКА-Нева", смотрите нарезку лучших моментов встречи на нашем youtube канале!
@@ -451,8 +598,9 @@ block content
               | Вторник, 22 сентября
 
         .media-socials__card
-          a(href="#").media-socials__logo
-            img(src="../src/images/fb.svg" alt="fb") 
+          a(href="#")
+            .media-socials__logo
+              img(src="../src/images/fb.svg" alt="fb") 
           .media-socials__descr
             p
               | Сегодня и завтра "Хумо-2" сыграет с командой "Алматы" на ташкентской "Хумо Арене". Приобрести билеты вы можете на сайте…
@@ -460,8 +608,9 @@ block content
               | Вторник, 22 сентября
 
         .media-socials__card
-          a(href="#").media-socials__logo
-            img(src="../src/images/tw.svg" alt="tw") 
+          a(href="#")
+            .media-socials__logo
+              img(src="../src/images/tw.svg" alt="tw") 
           .media-socials__descr
             p
               | Сегодня и завтра "Хумо-2" сыграет с командой "Алматы" на ташкентской "Хумо Арене". Приобрести билеты вы можете на сайте…
@@ -469,8 +618,9 @@ block content
               | Вторник, 22 сентября
 
         .media-socials__card
-          a(href="#").media-socials__logo
-            img(src="../src/images/insta.svg" alt="insta") 
+          a(href="#")
+            .media-socials__logo
+              img(src="../src/images/insta.svg" alt="insta") 
           .media-socials__descr
             p
               | Сегодня и завтра "Хумо-2" сыграет с командой "Алматы" на ташкентской "Хумо Арене". Приобрести билеты вы можете на сайте…

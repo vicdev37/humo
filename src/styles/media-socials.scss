@@ -1,3 +1,46 @@
+.owl-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-item.opacity-left {
+  margin-right: 20px;
+  opacity: 0.5;
+}
+
+.slider-item.opacity-right {
+  margin-left: 20px;
+  opacity: 0.5;
+}
+
+.slider-item.center {
+  position: relative;
+
+  &:before {
+    content: url("../images/arrow-left.svg");
+    position: absolute;
+    top: 40%;
+    left: -13%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &:after {
+    content: url("../images/arrow-right.svg");
+    position: absolute;
+    top: 40%;
+    right: -13%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+
+.play {
+  position: absolute;
+  left: 40%;
+  top: 28%;
+}
+
 .media-socials__wrapper {
   display: flex;
   align-items: center;
@@ -7,20 +50,29 @@
 
 .media-socials__card {
   max-width: 337px;
+  min-height: 247px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   padding-right: 94px;
   margin-left: 27px;
+
+  a {
+    min-height: 54px;
+  }
 }
 
 .media-socials__card:last-child {
   border: none;
 }
 
+
 .media-socials__logo {
-  min-height: 54px;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
 }
 
 .media-socials__descr {
+
   p {
     font-family: GothamPro;
     font-size: 12px;
@@ -35,4 +87,5 @@
   color: #000000;
   mix-blend-mode: normal;
   opacity: 0.3;
+  margin-top: 60px;
 }
