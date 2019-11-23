@@ -1,0 +1,90 @@
+.leaders-wrapper {
+  display: flex;
+  margin-top: 33px;
+  flex-wrap: wrap;
+  margin-left: -60px;
+}
+
+.leader-card {
+  display: flex;
+  width: 399px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.leader-card-info {
+  margin-left: 30px;
+}
+
+.leader-card__header {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px;
+}
+
+
+.leader-number {
+  width: 28px;
+  font-family: DINPro;
+  font-size: 52px;
+  line-height: 47px;
+  color: #000000;
+  margin-left: 15px;
+}
+
+.leader-main-info {
+  margin-left: 26px;
+}
+
+.leader-position {
+  font-family: GothamPro;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.leader-name {
+  font-family: Gotham Pro;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.leader-card__rating {
+  display: flex;
+  margin-top: 11px;
+
+}
+
+.leader-main-rating {
+  width: 100px;
+}
+
+.leader-main-rating__title {
+  font-family: GothamPro;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.leader-main-rating__number {
+  font-weight: bold;
+
+}
+
+.leader-another-rating {
+
+  display: flex;
+  flex-wrap: wrap;
+  font-family: GothamPro;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  margin-top: -10px;
+
+  .point {
+    width: 69px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+}

@@ -3,54 +3,82 @@
 }
 
 body {
-  background: url('../images/background.svg') center/cover no-repeat;
-  
+  background: #ebecf1;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 100px;
+  width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.main {
-  display: grid;
-}
-
-.block {
-  display: flex;
-  width: 200px;
-  height: 200px;
-}
 
 .image img {
   object-fit: cover;
 }
 
- input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 37.5px;
-    background: #FFFFFF;
-    border: none;
-    outline: none;
- }
+input {
+  display: block;
+  width: 317px;
+  padding: 13px;
+  border-radius: 2px;
+  background: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  font-family: DINPro;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
 
- button {
-    outline: none;
- }
+  &::placeholder {
+    font-family: DINPro;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+}
+
+button {
+  outline: none;
+  width: 147px;
+  height: 44px;
+  border: 2px solid #182F7B;
+  font-family: DINPro;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: #182F7B;
+  cursor: pointer;
+
+  &:hover {
+    background: #182F7B;
+    color: #FFFFFF;
+  }
+}
+
 
 a {
   text-decoration: none;
-  color: black;
-} 
 
-a:hover {
-  text-decoration: underline;
 }
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+// a:hover {
+//   text-decoration: underline;
+// }
 
 ::placeholder {
   font-family: Roboto;
@@ -61,10 +89,46 @@ a:hover {
 
   color: rgba(0, 0, 0, 0.2);
 }
+
 .hidden {
   display: none;
 }
 
+section {
+  margin-top: 67px;
+}
+
+.section-title {
+  font-family: DINPro;
+  font-size: 33px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #000000;
+
+  h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.section-link {
+  font-family: GothamPro;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 2px;
+
+}
+
+.orange-line {
+  width: 53px;
+  height: 8px;
+  background: #F7941E;
+  margin-top: 29px;
+}
 
 @media (max-width: 868px) {
   .container {

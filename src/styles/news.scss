@@ -1,0 +1,118 @@
+.news-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 33px;
+  margin-left: -44px;
+
+  li {
+    margin-left: 44px;
+
+    a {
+      font-family: GothamPro;
+      font-size: 12px;
+      line-height: 26px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+  }
+
+}
+
+.news-cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-top: 60px;
+}
+
+.news-card {
+  width: 440px;
+  height: 427px;
+  background: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.news-card.main-new {
+
+  width: 900px;
+  background: url('../images/news-1.jpg') no-repeat center / cover;
+}
+
+.news-card:nth-child(2) {
+
+  background: #192f7b;
+
+  .news-card-text__wrapper {
+    position: relative;
+  }
+
+  .news-card-text__wrapper:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 110.85px;
+    height: 103px;
+    background: url("../images/ticket-logo.svg") no-repeat center / cover;
+  }
+}
+
+
+
+
+
+
+.news-card:nth-child(3) {
+  background: url('../images/news-2.jpg') no-repeat center / cover;
+}
+
+.news-card:nth-child(4) {
+  background: url('../images/news-3.jpg') no-repeat center / cover;
+}
+
+.news-card:nth-child(5) {
+  background: url('../images/news-4.jpg') no-repeat center / cover;
+}
+
+.news-card-text__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 90%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+.news-card__tag {
+  font-family: DINPro;
+  width: 111px;
+  height: 23px;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+}
+
+.news-card-text__title {
+  max-width: 496px;
+  font-family: DINPro;
+  color: #F8F8F8;
+  font-size: 38px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.news-card-text__date {
+  font-family: GothamPro;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}

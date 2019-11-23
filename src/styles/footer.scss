@@ -1,0 +1,91 @@
+ footer {
+   height: 602px;
+   margin-top: 170px;
+ }
+
+ .footer-wrapper {
+   display: flex;
+
+   height: 100%;
+ }
+
+ .footer-menu__wrapper {
+   background: #182F7B;
+   width: 25%;
+   padding-left: 40px;
+   padding-top: 53px;
+ }
+
+ .footer-menu {
+   margin-top: 61px;
+
+   ul {
+     display: flex;
+     flex-wrap: wrap;
+     width: 200px;
+     margin-left: -30px;
+     margin-top: -21px;
+
+     li {
+       width: 62px;
+       margin-left: 30px;
+       margin-top: 21px;
+     }
+
+     a {
+       color: white;
+     }
+   }
+ }
+
+ .juridical-info {
+   margin-top: 210px;
+   font-family: GothamPro;
+   font-size: 14px;
+   line-height: 22px;
+   color: #FFFFFF;
+   mix-blend-mode: normal;
+   opacity: 0.5;
+ }
+
+
+ .footer-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 75%;
+   background: black;
+
+   form {
+     margin-top: 27px;
+
+     input {
+       margin-top: 27px;
+     }
+   }
+ }
+
+ .footer-form__title {
+   font-family: DINPro;
+   font-size: 38px;
+   line-height: 47px;
+   color: #FFFFFF;
+
+ }
+
+ .footer-form__logo {
+   margin-top: 37px;
+ }
+
+ button.subscribe {
+   width: 100%;
+   margin-top: 27px;
+   color: white;
+   background: black;
+
+   &:hover {
+     background: #182F7B;
+
+   }
+ }

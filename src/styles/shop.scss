@@ -1,0 +1,70 @@
+.shop-badges__wrapper {
+  display: flex;
+  margin-left: -20px;
+  margin-top: 69px;
+}
+
+.shop-badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  min-height: 324px;
+  background: white;
+  margin-left: 20px;
+
+}
+
+.shop-badge-img {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+.shop-badge__text {
+  margin-left: 12px;
+  color: #000000;
+}
+
+.shop-badge__name {
+  font-family: GothamPro;
+  font-size: 12px;
+  line-height: 22px;
+
+}
+
+.shop-badge__price {
+  font-family: DINPro;
+  font-size: 38px;
+  line-height: 47px;
+  text-transform: uppercase;
+
+}
+
+.shop-badge.blue {
+  background: #182F7B;
+  justify-content: flex-end;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    width: 110px;
+    height: 147px;
+    background: url('../images/lock-orange.svg') no-repeat center/cover;
+  }
+}
+
+.shop-badge__title {
+  font-family: DINPro;
+  font-size: 38px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+}

@@ -1,4 +1,619 @@
 extends layout/layout.pug
 
 block content
-  
+  .menu-nav
+    ul.left
+      li
+        a(href="#") 
+          img(src="../src/images/humo-logo.svg" alt="logo")
+      li.tickets
+        a(href="#")
+          | Билеты 
+    ul.center
+      nav
+        li
+          a(href="#")
+            | Команда
+        li
+          a(href="#")
+            | Игры
+        li
+          a(href="#")
+            | Хумо 2
+        li
+          a(href="#")
+            | Новости
+    ul.right
+      li.shop
+        a(href="#")
+          | Магазин
+      li.login
+        a(href="#")
+          | Войти
+      li#menu-btn  
+        a(href="#").menu-btn
+          span
+
+  header  
+    .container
+      .header-text 
+        h1
+          | «Хумо» продолжает Чемпионат Высшей хоккейной лиги
+        .orange-line  
+        .header-date
+          | Суббота, 22 сентября  
+
+  section.news
+    .container
+      .section-title
+        h2
+          | Последние новости
+      .orange-line
+      ul.news-nav
+        li 
+          a(href="#") Команда   
+        li 
+          a(href="#") Обзоры   
+        li 
+          a(href="#") Превью   
+        li 
+          a(href="#") Официально   
+        li 
+          a(href="#") Хумо-2 
+      .news-cards__wrapper
+        .news-card.main-new
+          .news-card-text__wrapper
+            .news-card__tag
+              | Интервью
+            .news-card-text
+              a(href="#")
+                .news-card-text__title
+                  | Евгений Попихин: "Вратарь соперника творил чудеса"
+              .news-card-text__date
+                | Четверг, 26 сентября
+
+
+        .news-card
+          .news-card-text__wrapper
+            .news-card__tag
+              | Магазин
+            .news-card-text
+              a(href="#")
+                .news-card-text__title
+                  | Торопитесь! Билеты уже в продаже!
+              .news-card-text__date
+                | Четверг, 26 сентября
+
+        .news-card
+          .news-card-text__wrapper
+            .news-card__tag
+              | Интервью
+            .news-card-text
+              a(href="#")
+                .news-card-text__title
+                  | Евгений Попихин: "Вратарь соперника творил чудеса"
+              .news-card-text__date
+                | Пятница, 13 сентября
+
+        .news-card
+          .news-card-text__wrapper
+            .news-card__tag
+              | Видео
+            .news-card-text
+              a(href="#")
+                .news-card-text__title
+                  | Хоккей ближе, чем ты думаешь
+              .news-card-text__date
+                | Вторник, 17 сентября
+
+        .news-card
+          .news-card-text__wrapper
+            .news-card__tag
+              | Статья
+            .news-card-text
+              a(href="#")
+                .news-card-text__title
+                  | Гендунов покидает "Хумо"
+              .news-card-text__date
+                | Вторник, 17 сентября
+
+  section.match-center
+    .container
+      .section-wrapper
+        .section-left
+          .section-title
+            h2
+              | Матч-Центр
+          .orange-line.match
+          a(href="#").section-link
+            | Все матчи
+        .section-right
+          .choose-team 
+            | Выберите 
+            br
+            | команду:
+          a(href="#").team-1
+            | ХУМО 
+          a(href="#").team-2   
+            | ХУМО-2    
+
+      .wrapper
+        .matches-wrapper
+          .match-card
+            .match-title
+              | Прошедший матч
+            .match-info__wrapper
+              .match-info__when
+                | Вторник, 
+                br
+                | 22 сентября
+              .match-info__where
+                | Хумо Арена, 
+                br
+                | Санкт-Петербург   
+            .match-result__wrapper
+              .team-left
+                img(src="../src/images/humo-match-logo.svg" alt="team1") 
+              .match-result
+                span
+                  | 3 - 2  
+              .team-right
+                img(src="../src/images/ska-neva.svg" alt="team2")    
+            .match-versus
+              | Хумо 
+              span
+                |vs
+              | СКА-Нева
+            button.review
+              | Обзор
+
+          .match-card
+            .match-title
+              | Предстоящий матч
+            .match-info__wrapper
+              .match-info__when
+                | Вторник, 
+                br
+                | 22 сентября
+              .match-info__where
+                | Хумо Арена, 
+                br
+                | Ташкент, Узбекистан   
+            .match-result__wrapper
+              .team-left
+                img(src="../src/images/humo-match-logo.svg" alt="team1") 
+              .match-result
+                span
+                  | / 
+              .team-right
+                img(src="../src/images/hc-rostov.svg" alt="team2")    
+            .match-versus
+              | Хумо 
+              span
+                |vs
+              | Ростов
+            button.tickets
+              | Билеты
+            button.preview
+              | Превью 
+
+  section.leaders 
+    .container 
+      .section-title
+        h2
+          | Лидеры
+      .orange-line.match
+      a(href="#").section-link
+        | Полная характеристика
+
+      .leaders-wrapper
+        .leader-card 
+          .leader-card-img
+            img(src="../src/images/leader-1.jpg" alt="leader-1")
+          .leader-card-info
+            .leader-card__header
+              .leader-number
+                | 1
+              .leader-main-info
+                .leader-position
+                  | Бомбардир 
+                .leader-name
+                  | Мережко Игорь  
+            .leader-card__rating
+              .leader-main-rating
+                .leader-main-rating__title
+                  | Очки:
+                .leader-main-rating__number
+                  | 23 
+              .leader-another-rating
+                .point
+                  | Передачи:
+                  br
+                  | 123
+                .point
+                  | Шайбы:
+                  br
+                  | 123
+                .point
+                  | + / -
+                  br
+                  | 123
+                .point
+                  | ШТР:
+                  br
+                  | 2
+        .leader-card 
+          .leader-card-img
+            img(src="../src/images/leader-2.jpg" alt="leader-2")
+          .leader-card-info
+            .leader-card__header
+              .leader-number
+                | 2
+              .leader-main-info
+                .leader-position
+                  | Защитник
+                .leader-name
+                  | Ислямов Надир 
+            .leader-card__rating
+              .leader-main-rating
+                .leader-main-rating__title
+                  | Голы:
+                .leader-main-rating__number
+                  | 2 
+              .leader-another-rating
+                .point
+                  | Очки:
+                  br
+                  | 23
+                .point
+                  | Передачи:
+                  br
+                  | 123
+                .point
+                  | ШТР
+                  br
+                  | 123
+                .point
+                  | + / -
+                  br
+                  | 23
+
+        .leader-card 
+          .leader-card-img
+            img(src="../src/images/leader-3.jpg" alt="leader-3")
+          .leader-card-info
+            .leader-card__header
+              .leader-number
+                | 3
+              .leader-main-info
+                .leader-position
+                  | Ассистент
+                .leader-name
+                  | Сорокин Всеволод   
+            .leader-card__rating
+              .leader-main-rating
+                .leader-main-rating__title
+                  | Передачи:
+                .leader-main-rating__number
+                  | 123 
+              .leader-another-rating
+                .point
+                  | Голы:
+                  br
+                  | 2
+                .point
+                  | Очки:
+                  br
+                  | 23
+                .point
+                  | + / -
+                  br
+                  | 123
+                .point
+                  | ШТР:
+                  br
+                  | 2
+
+        .leader-card 
+          .leader-card-img
+            img(src="../src/images/leader-4.jpg" alt="leader-4")
+          .leader-card-info
+            .leader-card__header
+              .leader-number
+                | 4
+              .leader-main-info
+                .leader-position
+                  | Бомбардир-защитник
+                .leader-name
+                  | Ерохин Арсений  
+            .leader-card__rating
+              .leader-main-rating
+                .leader-main-rating__title
+                  | Очки:
+                .leader-main-rating__number
+                  | 23 
+              .leader-another-rating
+                .point
+                  | Передачи:
+                  br
+                  | 123
+                .point
+                  | Шайбы:
+                  br
+                  | 123
+                .point
+                  | + / -
+                  br
+                  | 123
+                .point
+                  | ШТР:
+                  br
+                  | 2
+
+        .leader-card 
+          .leader-card-img
+            img(src="../src/images/leader-5.jpg" alt="leader-5")
+          .leader-card-info
+            .leader-card__header
+              .leader-number
+                | 5
+              .leader-main-info
+                .leader-position
+                  | Плюс/Минус
+                .leader-name
+                  | Таталин Роман   
+            .leader-card__rating
+              .leader-main-rating
+                .leader-main-rating__title
+                  | -+/-:
+                .leader-main-rating__number
+                  | 2 
+              .leader-another-rating
+                .point
+                  | Очки:
+                  br
+                  | 23
+                .point
+                  | Передачи:
+                  br
+                  | 123
+                .point
+                  | + / -
+                  br
+                  | 23
+                .point
+                  | ШТР:
+                  br
+                  | 123
+
+        .leader-card 
+          .leader-card-img
+            img(src="../src/images/leader-6.jpg" alt="leader-6")
+          .leader-card-info
+            .leader-card__header
+              .leader-number
+                | 6
+              .leader-main-info
+                .leader-position
+                  | Вратарь 
+                .leader-name
+                  | Гуляев Иван  
+            .leader-card__rating
+              .leader-main-rating
+                .leader-main-rating__title
+                  | %ОБ:
+                .leader-main-rating__number
+                  | 2
+              .leader-another-rating
+                .point
+                  | Игры:
+                  br
+                  | 23
+                .point
+                  | Победы:
+                  br
+                  | 123
+                .point
+                  | КН:
+                  br
+                  | 123
+                .point
+                  | И "О"
+                  br
+                  | 123                                                  
+
+
+  section.banner 
+    .container 
+      .section-title
+        h2
+          | Баннер
+      .banner-img 
+        img(src="../src/images/banner-logo.svg" alt="banner-logo")
+
+  section.media-socials
+    .container 
+      .section-title
+        h2
+          | Медиа
+      .orange-line.match 
+
+      .media-slider
+
+      .media-socials__wrapper
+        .media-socials__card
+          a(href="#").media-socials__logo
+            img(src="../src/images/vk.svg" alt="vk") 
+          .media-socials__descr
+            p
+              | Если вчера вы не следили за игрой "Хумо" против "СКА-Нева", смотрите нарезку лучших моментов встречи на нашем youtube канале!
+            .media-socials__date 
+              | Вторник, 22 сентября
+
+        .media-socials__card
+          a(href="#").media-socials__logo
+            img(src="../src/images/fb.svg" alt="fb") 
+          .media-socials__descr
+            p
+              | Сегодня и завтра "Хумо-2" сыграет с командой "Алматы" на ташкентской "Хумо Арене". Приобрести билеты вы можете на сайте…
+            .media-socials__date 
+              | Вторник, 22 сентября
+
+        .media-socials__card
+          a(href="#").media-socials__logo
+            img(src="../src/images/tw.svg" alt="tw") 
+          .media-socials__descr
+            p
+              | Сегодня и завтра "Хумо-2" сыграет с командой "Алматы" на ташкентской "Хумо Арене". Приобрести билеты вы можете на сайте…
+            .media-socials__date 
+              | Вторник, 22 сентября
+
+        .media-socials__card
+          a(href="#").media-socials__logo
+            img(src="../src/images/insta.svg" alt="insta") 
+          .media-socials__descr
+            p
+              | Сегодня и завтра "Хумо-2" сыграет с командой "Алматы" на ташкентской "Хумо Арене". Приобрести билеты вы можете на сайте…
+            .media-socials__date 
+              | Вторник, 22 сентября                  
+
+  section.section-shop
+    .container 
+      .section-title
+        h2
+          | Магазин
+      .orange-line.match 
+
+      .shop-badges__wrapper
+        a(href="#").shop-badge
+          .shop-badge-img 
+            img(src="../src/images/badge-1.svg" alt="badge-1")
+          .shop-badge__text  
+            .shop-badge__name
+              | Значок "HUMO"   
+            .shop-badge__price
+              | 2200 ₽  
+
+        a(href="#").shop-badge
+          .shop-badge-img 
+            img(src="../src/images/badge-2.svg" alt="badge-2")
+          .shop-badge__text  
+            .shop-badge__name
+              | Значок "HUMO"   
+            .shop-badge__price
+              | 2200 ₽     
+
+        a(href="#").shop-badge
+          .shop-badge-img 
+            img(src="../src/images/badge-3.svg" alt="badge-3")
+          .shop-badge__text  
+            .shop-badge__name
+              | Значок "HUMO"   
+            .shop-badge__price
+              | 2200 ₽     
+
+        a(href="#").shop-badge
+          .shop-badge-img 
+            img(src="../src/images/badge-4.svg" alt="badge-4")
+          .shop-badge__text  
+            .shop-badge__name
+              | Значок "HUMO"   
+            .shop-badge__price
+              | 2200 ₽   
+
+        a(href="#").shop-badge.blue
+          .shop-badge__title
+            | Все 
+            br
+            | Товары      
+
+  section.partners
+    .container 
+      .section-wrapper.section-wrapper-partners
+        .section-left
+          .section-title
+            h2
+              | Партнеры
+          .orange-line.match
+
+        .section-right.firms
+          .partners-item
+            img(src="../src/images/Pepsi.svg" alt="pepsi")
+          .partners-item
+            img(src="../src/images/iticket.svg" alt="iticket")
+          .partners-item
+            img(src="../src/images/Montella.svg" alt="Montella")
+          .partners-item
+            img(src="../src/images/Gross.svg" alt="Gross")
+          .partners-item
+            img(src="../src/images/Eriell.svg" alt="Eriell")
+          .partners-item
+            img(src="../src/images/Chopar.svg" alt="Chopar")    
+          .partners-item
+            img(src="../src/images/EnterEn.svg" alt="EnterEn")   
+
+  footer
+    .footer-wrapper
+      .footer-menu__wrapper
+        .footer-menu__logo
+          img(src="../src/images/footer-logo.svg" alt="footer-logo")   
+        .footer-menu
+          ul 
+            li
+              a(href="#") Главная  
+            li
+              a(href="#") Команда  
+            li
+              a(href="#") Клуб  
+            li
+              a(href="#") Арена  
+            li
+              a(href="#") Хумо-2  
+            li
+              a(href="#") Медиа  
+            li
+              a(href="#") Игры
+
+            li
+              a(href="#") Новости
+        
+        .juridical-info
+          | Юридическая 
+          br
+          | информация       
+      .footer-form
+        .footer-form__title
+          | Подпишись на рассылку
+        .footer-form__logo 
+          img(src="../src/images/humo-match-logo.svg" alt="logo")   
+        form
+          input(type="text" placeholder="Имя" name="name")
+          input(type="email" placeholder="Электронная почта" class="form-control" name="email")
+          button.subscribe
+            | Подписаться
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.media-socials__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 153px;
+  margin-left: -27px;
+}
+
+.media-socials__card {
+  max-width: 337px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 94px;
+  margin-left: 27px;
+}
+
+.media-socials__card:last-child {
+  border: none;
+}
+
+.media-socials__logo {
+  min-height: 54px;
+}
+
+.media-socials__descr {
+  p {
+    font-family: GothamPro;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.media-socials__date {
+  font-family: GothamPro;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}

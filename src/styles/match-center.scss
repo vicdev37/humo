@@ -1,0 +1,131 @@
+.section-wrapper {
+  display: flex;
+}
+
+.section-right {
+  margin-left: auto;
+
+  a {
+    display: block;
+    text-align: right;
+    font-family: GothamPro;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}
+
+.choose-team {
+  font-family: GothamPro;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+
+
+.orange-line.match {
+  margin-bottom: 29px;
+}
+
+.wrapper {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // background: red;
+
+}
+
+.matches-wrapper {
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.match-card {
+
+
+  button {
+    margin-top: 69px;
+
+  }
+}
+
+.match-title {
+  font-family: DINPro;
+  font-size: 38px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.match-info__wrapper {
+  display: flex;
+  font-family: GothamPro;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.match-info__when {
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.match-info__where {
+  margin-left: 20px;
+  color: #000000;
+}
+
+.match-result__wrapper {
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+
+  span {
+    font-family: DINPro;
+    font-size: 52px;
+    line-height: 61px;
+
+  }
+}
+
+.match-versus {
+  font-family: GothamPro;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 50px;
+
+  span {
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+}
+
+
+
+button.tickets {
+  width: 182px;
+}
+
+button.preview {
+  margin-left: 6px;
+}
