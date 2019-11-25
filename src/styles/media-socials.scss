@@ -39,6 +39,7 @@
   position: absolute;
   left: 40%;
   top: 28%;
+  cursor: pointer;
 }
 
 .media-socials__wrapper {
@@ -72,11 +73,13 @@
 }
 
 .media-socials__descr {
+  min-height: 200px;
 
   p {
     font-family: GothamPro;
     font-size: 12px;
     line-height: 20px;
+    min-height: 100px;
   }
 }
 
@@ -88,4 +91,12 @@
   mix-blend-mode: normal;
   opacity: 0.3;
   margin-top: 60px;
+}
+
+.slider-item__title {
+  font-family: GothamPro;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ACAFC0;
+  margin-top: 10px;
 }

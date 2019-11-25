@@ -63,7 +63,7 @@ block content
       .news-cards__wrapper
         .news-card.main-new
           .news-card-text__wrapper
-            .news-card__tag
+            a(href="#").news-card__tag
               | Интервью
             .news-card-text
               a(href="#")
@@ -75,7 +75,7 @@ block content
 
         .news-card
           .news-card-text__wrapper
-            .news-card__tag
+            a(href="#").news-card__tag
               | Магазин
             .news-card-text
               a(href="#")
@@ -86,18 +86,18 @@ block content
 
         .news-card
           .news-card-text__wrapper
-            .news-card__tag
+            a(href="#").news-card__tag
               | Интервью
             .news-card-text
               a(href="#")
                 .news-card-text__title
-                  | Евгений Попихин: "Вратарь соперника творил чудеса"
+                  | Победная пятница, тринадцатое
               .news-card-text__date
                 | Пятница, 13 сентября
 
         .news-card
           .news-card-text__wrapper
-            .news-card__tag
+            a(href="#").news-card__tag
               | Видео
             .news-card-text
               a(href="#")
@@ -108,7 +108,7 @@ block content
 
         .news-card
           .news-card-text__wrapper
-            .news-card__tag
+            a(href="#").news-card__tag
               | Статья
             .news-card-text
               a(href="#")
@@ -579,12 +579,18 @@ block content
       .media-slider
         .owl-carousel.owl-theme
           .slider-item.opacity-left
-             img(src="../src/images/slider-img-2.jpg" alt="img")  
+             img(src="../src/images/slider-img-2.jpg" alt="img") 
+             .slider-item__title 
+              | Чемпионат ВХЛ - Кубок Шёлкового пути  
           .slider-item.center
-             img(src="../src/images/slider-img-1.jpg" alt="img")    
+             img(src="../src/images/slider-img-1.jpg" alt="img") 
+             .slider-item__title 
+              | Чемпионат ВХЛ - Кубок Шёлкового пути   
              img(src="../src/images/play.svg" alt="play").play    
           .slider-item.opacity-right
-             img(src="../src/images/slider-img-2.jpg" alt="img")   
+             img(src="../src/images/slider-img-2.jpg" alt="img") 
+             .slider-item__title 
+              | Чемпионат ВХЛ - Кубок Шёлкового пути   
 
       .media-socials__wrapper
         .media-socials__card
@@ -683,7 +689,7 @@ block content
         .section-left
           .section-title
             h2
-              | Партнеры
+              | Партнёры
           .orange-line.match
 
         .section-right.firms
@@ -735,7 +741,7 @@ block content
         .footer-form__title
           | Подпишись на рассылку
         .footer-form__logo 
-          img(src="../src/images/humo-match-logo.svg" alt="logo")   
+          img(src="../src/images/humo-logo-footer.svg" alt="logo")   
         form
           input(type="text" placeholder="Имя" name="name")
           input(type="email" placeholder="Электронная почта" class="form-control" name="email")

@@ -56,6 +56,7 @@ button {
   text-transform: uppercase;
   color: #182F7B;
   cursor: pointer;
+  background: transparent;
 
   &:hover {
     background: #182F7B;
@@ -101,7 +102,7 @@ section {
 }
 
 .section-title {
-  font-family: DINPro;
+  font-family: DINPro-CondensedItalic;
   font-size: 33px;
   line-height: 60px;
   text-transform: uppercase;

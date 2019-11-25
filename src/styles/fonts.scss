@@ -13,3 +13,34 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'DINPro-Italic';
+    src: url("../fonts/DINPro-Italic.eot");
+    src: url("../fonts/DINPro-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DINPro-Italic.woff") format("woff"),
+        url("../fonts/DINPro-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro-CondensedItalic';
+    src: url("../fonts/DINPro-CondensedItalic.eot");
+    src: url("../fonts/DINPro-CondensedItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/DINPro-CondensedItalic.woff") format("woff"),
+        url("../fonts/DINPro-CondensedItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url("../fonts/GothamPro.eot");
+    src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/GothamPro.woff2") format("woff2"),
+        url("../fonts/GothamPro.woff") format("woff"),
+        url("../fonts/GothamPro.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

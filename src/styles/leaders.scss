@@ -24,17 +24,16 @@
 
 
 .leader-number {
-  width: 28px;
+  width: 69px;
   font-family: DINPro;
   font-size: 52px;
   line-height: 47px;
   color: #000000;
   margin-left: 15px;
+  font-weight: bold;
 }
 
-.leader-main-info {
-  margin-left: 26px;
-}
+.leader-main-info {}
 
 .leader-position {
   font-family: GothamPro;
@@ -43,6 +42,7 @@
 }
 
 .leader-name {
+  width: 164px;
   font-family: Gotham Pro;
   font-weight: bold;
   font-size: 18px;
@@ -56,7 +56,7 @@
 }
 
 .leader-main-rating {
-  width: 100px;
+  width: 142px;
 }
 
 .leader-main-rating__title {
@@ -84,7 +84,7 @@
 
   .point {
     width: 69px;
-    margin-left: 15px;
+    margin-left: 7px;
     margin-top: 10px;
   }
 }

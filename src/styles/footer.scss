@@ -11,7 +11,7 @@
 
  .footer-menu__wrapper {
    background: #182F7B;
-   width: 25%;
+   width: 26%;
    padding-left: 40px;
    padding-top: 53px;
  }
@@ -33,6 +33,7 @@
      }
 
      a {
+       font-family: GothamPro;
        color: white;
      }
    }
@@ -54,7 +55,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 75%;
+   width: 74%;
    background: black;
 
    form {
@@ -67,7 +68,7 @@
  }
 
  .footer-form__title {
-   font-family: DINPro;
+   font-family: DINPro-CondensedItalic;
    font-size: 38px;
    line-height: 47px;
    color: #FFFFFF;
